@@ -64,4 +64,17 @@ function random() { //creates a function named random
 }
 
 window.alert(Math.random()); //creates an alert and assigns it the expression Math.random() which returns a random number
-window.alert(Math.random(1) * 10); // creates an alert and assigns it the expression Math.random(1) * 10 which returns a random number between 1 and 10
+window.alert(Math.random() * 10); // creates an alert and assigns it the expression Math.random(1) * 10 which returns a random number between 0 and 10
+
+
+function my_Dictionary() {
+    var Animal = {
+        Species: "Dog",
+        Color: "Black",
+        Breed: "Labrador",
+        Age: 5,
+        Sound: "Woof",
+        Sex: "Male",
+    };
+    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
