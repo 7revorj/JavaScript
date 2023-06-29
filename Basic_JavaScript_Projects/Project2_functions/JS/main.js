@@ -24,3 +24,23 @@ function myFunction2() {                        // This function sets the value 
 }
 
 
+var foo = document.getElementsByTagName("p");  //Creates a variable foo and assigns it the value of the p element(s) 
+
+
+var A = 100
+var B = 100
+function myDollars() {
+    let result = A + B;
+    document.getElementById("A").innerHTML = result;
+    return result;
+}
+window.onload = function () {
+    myDollars();
+};
+
+   
+(function (A = 100, B = 200) {
+    let result = A + B;
+    document.getElementById("A").innerHTML = result;
+    document.write(result);
+})();
