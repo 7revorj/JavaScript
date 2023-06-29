@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () { //creates an event l
 
 function addition_Function() {  //creates a function named addition_Function
     var addition = 2 + 2; //creates a variable named addition and assigns it the expression 2 + 2
-    document.getElementById("Add").innerHTML = ("2 + 2 = " + res1);  //replaces the value of the element ID Math with a string and the result of the assignment expression 'addition'
+    document.getElementById("Add").innerHTML = ("2 + 2 = " + addition);  //replaces the value of the element ID Math with a string and the result of the assignment expression 'addition'
 }
 
 function subtraction_Function() { //creates a function named subtraction_Function
     var subtraction = 2 - 2; //creates a variable named subtraction and assigns it the expression 2 - 2
-    document.getElementById("Sub").innerHTML = ("2 - 2 = " + res2); //replaces the value of the element ID Math with a string and the result of the assignment expression 'subtraction'
+    document.getElementById("Sub").innerHTML = ("2 - 2 = " + subtraction); //replaces the value of the element ID Math with a string and the result of the assignment expression 'subtraction'
 }
 
 function multiplication() {  //creates a function named multiplication
