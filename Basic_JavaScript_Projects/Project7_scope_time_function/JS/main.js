@@ -13,24 +13,13 @@ function add_numbers2() {
     document.getElementById("add_numbers1").innerHTML = (Z + X + "<br>");
 }
 
-function get_Date() {
-    if (new Date().getHours() > 18) {
-        document.getElementById("greeting").innerHTML = "How are you today?";
-    }
-}
 
 if (1 < 2) {
     document.getElementById("lessthan").innerHTML = "The left number is smaller than the number on the right.";
 }
 
 function get_Date() {
-    if (new Date().getHours() < 18) {
-        document.getElementById("Greeting2").innerHTML = "How are you today?";
-    }
-}
-
-function get_Date() {
-    if (new Date().getHours() < 22.5) {
+    if (new Date().getHours() > 22.5) {
         alert("It is bed time.");
     }
 }
@@ -50,7 +39,7 @@ function pokemon_judgement() {
     if (Pokemon === "Bulbasaur" || Pokemon === "Charmander" || Pokemon === "Squirtle" || Pokemon === "Pikachu" || Pokemon === "Chikorita" || Pokemon === "Cyndaquil" || Pokemon === "Totodile" || Pokemon === "Treecko" || Pokemon === "Torchic" || Pokemon === "Mudkip") {
         trainer = "You are a Pokemon Trainer!";
     } else {
-        trainer = "You are not cut out to be a Pokemon Trainer!";
+        trainer = "No";
     }
     document.getElementById("Judgement").innerHTML = trainer;
 }
