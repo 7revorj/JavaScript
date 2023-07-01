@@ -22,8 +22,8 @@ function slice_Method() { //creates a function named slice_Method which uses the
 }
 
 function slice_Method2() { //creates a function named slice_Method2 which uses the .slice method to output the names of tonight's fighters
-    var Sentence = "The fighters tonight are Anthony and Barrett"; //creates a local variable sentence and assigns it the value of the string
-    var Section = Sentence.slice(24, 44); //creates a locaal variable Section and assigns it the value of the sentence modified by the method function to return the names of the fighters
+    var Sentence = "The fighters tonight are Sean Strickland and Abus Magomedov"; //creates a local variable sentence and assigns it the value of the string
+    var Section = Sentence.slice(24, 58); //creates a locaal variable Section and assigns it the value of the sentence modified by the method function to return the names of the fighters
     document.getElementById("fighters").innerHTML = Section; //replaces the value of the element ID fighters with the result of the variable Section
 
 }
