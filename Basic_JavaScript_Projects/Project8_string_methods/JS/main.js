@@ -67,7 +67,7 @@ function precision_Method() { //creates a function called precision_Method
 function toFixed() { //creates a function named toFixed
     let myNumber = 10.52134; //creates a local variable named myNumber and assigns it the value 10.52134
     let formatted = myNumber.toFixed(1); //uses an assignment expression to assign the value of myNumber (modified by the method .toFixed(1) to return 10.5) to the variable formatted
-    document.getElementById("fixed").innerHTML = formatted; //replaces the value of the element ID fixed with the result of the local variable formatted
+    console.log (formatted); //logs the value of formatted to the console
 }
 
 function TLOU_Creator() { //creates a function named TLOU_Creator
