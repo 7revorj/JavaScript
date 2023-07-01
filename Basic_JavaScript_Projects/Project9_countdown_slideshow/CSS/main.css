@@ -106,3 +106,19 @@ footer{
     width: 100%;
     text-align: center;
 }
+p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#seconds{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
