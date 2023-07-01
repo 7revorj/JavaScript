@@ -21,7 +21,7 @@ function Person(AgeCat, Demeanor, stateOfBeing) { //Creates a function named Per
 }
 var Trevor = new Person("Young", "Wild", "Free"); //Creates a variable Trevor and creates a new object instance of the Person constructor with three parameters/arguments which are passed to initialize the respective properties of the object
 function PersonDetails() { //Creates a function named PersonDetails
-    document.getElementById("New_and_This").innerHTML = "Trevor is:" + "<br/>Age: " + Trevor.personAge + "<br/>Demeanor: " + Trevor.personDemeanor + "<br/>State of Being: " + Trevor.personStateOfBeing;
+    document.getElementById("New_and_This").innerHTML = "Trevor's details:" + "<br/>Vigor: " + Trevor.personAge + "<br/>Demeanor: " + Trevor.personDemeanor + "<br/>State of Being: " + Trevor.personStateOfBeing;
 } //above gets the HTML content of the New_and_This id and replaces it with the result of Trevor.personAge, Trevor.personDemeanor, and Trevor.personStateOfBeing
 
 
