@@ -35,11 +35,11 @@ function Age_Function() {
 }
 
 function pokemon_judgement() {
-    Pokemon = document.getElementById("Pokemon").value;
-    if (Pokemon === "Bulbasaur" || Pokemon === "Charmander" || Pokemon === "Squirtle" || Pokemon === "Pikachu" || Pokemon === "Chikorita" || Pokemon === "Cyndaquil" || Pokemon === "Totodile" || Pokemon === "Treecko" || Pokemon === "Torchic" || Pokemon === "Mudkip") {
-        trainer = "You are a Pokemon Trainer!";
+    Pokemon = document.getElementById("Pokemon").value.toLowerCase();
+    if (Pokemon === "bulbasaur" || Pokemon === "charmander" || Pokemon === "squirtle" || Pokemon === "pikachu" || Pokemon === "chikorita" || Pokemon === "cyndaquil" || Pokemon === "totodile" || Pokemon === "treecko" || Pokemon === "torchic" || Pokemon === "mudkip") {
+        trainer = "You seem to have what it takes!";
     } else {
-        trainer = "No";
+        trainer = "Sorry, you are too young to be a pokemon legend.";
     }
     document.getElementById("Judgement").innerHTML = trainer;
 }
