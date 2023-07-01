@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () { //creates an event listener to call functions when the event DOMContentLoaded happens (which occurs after the HTML doc has been completely loaded and parsed)
     subtraction_Function(); // ALL of these are functions that are called when the DOM is fully loaded
     multiplication();
-    division();
+    division(); 
     more_Math();
     modulus_Operator();
     negation_Operator();
