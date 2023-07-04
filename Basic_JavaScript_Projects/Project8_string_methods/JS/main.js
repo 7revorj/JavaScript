@@ -25,7 +25,6 @@ function slice_Method2() { //creates a function named slice_Method2 which uses t
     var Sentence = "The fighters tonight are Sean Strickland and Abus Magomedov"; //creates a local variable sentence and assigns it the value of the string
     var Section = Sentence.slice(24, 58); //creates a locaal variable Section and assigns it the value of the sentence modified by the method function to return the names of the fighters
     document.getElementById("fighters").innerHTML = Section; //replaces the value of the element ID fighters with the result of the variable Section
-
 }
 
 function YELLING() { //creates a function named YELLING
@@ -64,6 +63,7 @@ function precision_Method() { //creates a function called precision_Method
     var X = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679; //creates a local variable X and assigns it pi
     document.getElementById("Precision").innerHTML = X.toPrecision(5); //replaces the value of the element ID Precision with the result of the method .toPrecision(5) applied to X
 } //in summary this function returns the value of X to 5 decimal places
+
 function toFixed() { //creates a function named toFixed
     let myNumber = 10.52134; //creates a local variable named myNumber and assigns it the value 10.52134
     let formatted = myNumber.toFixed(1); //uses an assignment expression to assign the value of myNumber (modified by the method .toFixed(1) to return 10.5) to the variable formatted
@@ -85,6 +85,7 @@ function TLOU_Creator() { //creates a function named TLOU_Creator
     }
     document.getElementById("ND").innerHTML = supply; //replaces the value of the element ID ND with the result of the conditional statement 
 }
+
 function fullLoad() { //creates a function called fullLoad
     let str = new String("The page has fully loaded"); //creates a local variable named str and assigns it the string value of the string The page has fully loaded
     console.log(str.valueOf()); //logs the primitive value of str to the console

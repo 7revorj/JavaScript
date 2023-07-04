@@ -51,3 +51,19 @@ function countdown() {
     }
     tick();
 }
+
+function countdown() { //This function starts a countdown from the number of seconds entered by the user. The countdown updates every second and when it reaches 0, alerts.
+    var seconds = document.getElementById("seconds").value;
+
+    function tick() { //This function decrements the 'seconds' variable by one every time it's called, updates the HTML element 'timer' to display the current number of seconds and stops the countdown when 'seconds' reaches -1
+        seconds = seconds - 1; //decreases the value of 'seconds' by 1
+        timer.innerHTML = seconds; //Updates the innerHTML property of the 'timer' HTML element to display the current number of seconds
+        var time = setTimeout(tick, 1000); //This sets a delay of 1000 milliseconds (1 second) before the 'tick' function is called again. The return value from setTimeout (a unique identifier for the timer)
+        if (seconds == -1) {  //checks if 'seconds' has reached -1
+            alert("Time's up!"); //If 'seconds' is -1, this displays a pop-up alert
+            clearTimeout(time); //stops the timer
+            timer.innerHTML = ""; //clears the displayed timer
+        }
+    }
+    tick(); //this function is immediately called after it's defined. This starts the countdown.
+}
