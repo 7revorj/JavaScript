@@ -1,7 +1,7 @@
 function getReceipt() {
     //This initializes our string so it can get passed from
     // function to function, growing line by line into a full receipt
-    var text1 = "<h3>You Ordered:</h3>";
+    var text1 = "<h3>Your Order:</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
@@ -10,7 +10,7 @@ function getReceipt() {
             var selectedSize = sizeArray[i].value;
             text1 = text1 + selectedSize + "<br>";
         }
-    }
+    } //these conditional statements will change the size of the pizza and the associated image
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
         document.getElementById("pizzaImage").className = "personalPizza";
